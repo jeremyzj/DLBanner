@@ -38,5 +38,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'Kingfisher', '5.13.2'
+  s.dependency 'Kingfisher', '4.10.1'
+
+  s.requires_arc = true
 end
