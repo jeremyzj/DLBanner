@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLBanner'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A Swift Banner.'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'DLBanner/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'DLBanner' => ['DLBanner/Assets/*.png']
-  # }
+  s.swift_version  = "4.2"
+  s.swift_versions = ['4.0', '4.2', '5.0']
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'Kingfisher', '4.10.1'
 

@@ -78,7 +78,7 @@ public class DLBanner: UIView {
         collectionView?.bounces = false
         collectionView?.register(DLBannerCell.classForCoder(), forCellWithReuseIdentifier: "cell")
         collectionView?.backgroundColor = UIColor.clear
-        collectionView?.decelerationRate = 0.9
+        collectionView?.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.9)
         self.addSubview(collectionView!)
         self.setUpIndicator()
     }
@@ -101,7 +101,7 @@ public class DLBanner: UIView {
         collectionView?.isPagingEnabled = true
         collectionView?.backgroundColor = UIColor.clear
 
-        collectionView?.decelerationRate = 0.9
+        collectionView?.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.9)
         self.addSubview(collectionView!)
         
         self.setUpIndicator()
